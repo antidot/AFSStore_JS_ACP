@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<head>
+
+		<title>Antidot API </title>
+		<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.js"></script>	
+		<script type="text/javascript" src="../js/DecodeJson.js"></script>
+		<script type="text/javascript" src="../js/antidot.js"></script>
+		<script type="text/javascript" src="Param.js"></script>
+		<script type="text/javascript" src="../js/RenderUtils.js"></script>
+		<script type="text/javascript" src="../js/templates.js"></script>
+		<script type="text/javascript" src="../js/autocomplete.js"></script>
+		<link rel="stylesheet" href="../css/jquery-ui.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="./demo-file/demo-style.css" />
+		<link rel="stylesheet" type="text/css" href="./demo-file/live.css" />
+	</head>
+	<body class="page">
+		<div id="container">	
+			<div id="wrapper">
+				<div id="content-inside" class="">
+					<div id="header">
+				<div id="header-inside" class="inside">
+					<div id="logo">
+						<a href="http://publishing.presales.antidot.net/demo.html"><img src="demo-file/logo-antidot.png" alt="Antidot" height="42" width="198"></a>
+					</div>
+					<div id="header-title">Service de démonstration</div>
+				</div>
+			</div>
+			<div class="page-title-wrapper"><h1 class="page-title inside">Rich Autocomplete</h1></div>
+				<div class="page-excerpt-wrapper">
+					<div class="inside">
+	    				<h2>Auto-complétion</h2>
+	    				<p>Ce démonstrateur montre l'utilisation de l'API javascript. Celle-ci permet une utilisation poussée de l'auto-complétion.
+	    					L'API permet d'effectuer des recherches paramètrées Search et Acp classiques, mais aussi une combinaison des deux méthodes.
+	    					Le principe est d'appliquer la méthode Acp, puis d'effectuer des requêtes Search, paramètrées, sur les résultats de celle-ci pour enfin afficher des produits directement en rapport avec l'Acp.
+	    					<br>
+	    					On peut choisir d'afficher les métadonnées que l'on veut (nom, prix ...), les classifier par feed puis afficher les images.
+
+	    			</div>
+	    		</div>
+				<div class="inside">
+					<div id="content" class="grid col-620" style="height : 400px ;">
+						<div id="article_div">
+							<center>
+								<div style="margin-top : 30px ; ">
+								    <input id="autocomplete" style="width: 250px" title="type &quot;a&quot;" />
+								   	<button type="submit" style="width: 200px"  id="search">Recherche</button>
+
+								</div>
+							</center>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="copyright">Copyright 2016 Antidot - Tous droits réservés
+				<div class="tl-loop">
+					<ul>
+						<li><a href="http://www.antidot.net/credits/" title="Permalink to Crédits" rel="bookmark">Crédits</a></li>
+						<li><a href="http://www.antidot.net/mentions-legales/" title="Permalink to Mentions légales" rel="bookmark">Mentions légales</a></li>
+						<script>
+							var antidot=new Antidot.init({
+								common : initParam, 
+								acp :initParamAcp, 
+								search : initParamSearch , 
+								searchacp : initParamSearchAcp }
+								);
+							Antidot_Initialize("#autocomplete", antidot, "#search");
+						</script>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</body>
+

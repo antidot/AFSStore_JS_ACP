@@ -1,0 +1,87 @@
+.ui-autocomplete-category{ /* category's css */
+	background-color: white ;
+	font-weight:bold;
+	padding:.2em .4em;
+	line-height:1.5;
+	width : 90%;
+  	}
+
+.Antidot-category{
+	margin-bottom :5px ;
+ 	padding : 3px 0 3px 0;
+ 	width : 300px;
+}
+
+
+.Antidot-Columns{
+	float : left ;
+}
+
+
+ .Antidot-ItemSearchAcp{		/*css ajouter au bloc contenant image + texte si il y a une image */
+ 	min-height: 50px;
+ }
+
+.Antidot-LiItem{ 				/*css commun a l'image et les options d'un item*/
+	float:left;
+	word-wrap: break-word;
+	/*max-width: 100px ;*/
+}
+
+.Antidot-LiHitParade{			/* css of the hit-parade */
+	color : #375E8C!important;
+}
+
+.Antidot-LiImage{				/* css spécifique d'une image*/
+	width : 20%;
+}
+
+.Antidot-LiBanner{
+	width : 100%;
+}
+
+.Antidot-picture{
+	width :100% ; 
+}
+
+.Antidot-LiTexte{				/* css spécifique des options */
+	padding : 0 0 0 2%;
+	max-width : 74% ;
+	margin-left : 2%;
+}
+
+.Antidot-attributesli{			/* css for each attributes */ 
+	padding-bottom : 3px;
+}
+
+.ui-menu-item{
+	float :left ;
+	width : 90%;
+	margin-top:5px!important ;
+ 	padding : 3px 0 3px 0;
+}
+
+.ui-autocomplete{				/* all the autocomplete */
+	background:white ;
+	color: #454545;
+}
+
+ .Antidot-ulAcp{						/* the div contains all the elements */
+ 	padding: 5px;
+ 	height : 100%;
+ }
+
+.ui-state-focus:not(.LiHitParade){	/*focus of the element which does'nt belong to hit parade class */
+	color:#454545!important;
+}
+
+.ui-state-focus{		/* When the item is focused */
+	background: #EAEBE5!important;
+	border:none!important;
+	font-weight : normal!important;
+}
+
+
+.Antidot-LiHitParade .ui-state-focus{ /*css du hit parade quand il est focus */
+	color : #375E8C!important;
+}
